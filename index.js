@@ -17,7 +17,7 @@ const trade = async () => {
 
     let isLastest = false;
     if (tradeType === 1) {
-        const balanceArray = document.getElementsByClassName('_ls-167744059')[5].textContent.split(' ');
+        const balanceArray = document.getElementsByClassName('text-baseTextHighEmphasis')[29].textContent.split(' ');
         const balance = balanceArray[0];
         if (parseFloat(balance) < stopUsdc) {
             console.log(`剩余金额已低于${stopUsdc} usdc，已停止`)
@@ -30,7 +30,7 @@ const trade = async () => {
         }
     }
 
-    document.getElementsByClassName('_bg-901062054')[3].click();
+    document.getElementsByClassName('bg-baseBackgroundL1')[3].click();
     await new Promise(resolve => setTimeout(resolve, 100)); 
     document.getElementsByClassName('bg-greenPrimaryButtonBackground')[0].click()
     await new Promise(resolve => setTimeout(resolve, 1000)); 
@@ -43,7 +43,7 @@ const trade = async () => {
 
     document.getElementsByClassName('border-b-baseBorderMed')[0].click()
     await new Promise(resolve => setTimeout(resolve, 100)); 
-    document.getElementsByClassName('_bg-901062054')[3].click();
+    document.getElementsByClassName('bg-baseBackgroundL1')[3].click();
     await new Promise(resolve => setTimeout(resolve, 100)); 
     document.getElementsByClassName('bg-redPrimaryButtonBackground')[0].click()
     await new Promise(resolve => setTimeout(resolve, 1000)); 
