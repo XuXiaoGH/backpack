@@ -30,8 +30,8 @@ const trade = async () => {
         }
     }
 
-    document.getElementsByClassName('bg-baseBackgroundL1')[3].click();
-    await new Promise(resolve => setTimeout(resolve, 100)); 
+    document.getElementsByClassName('bg-baseBackgroundL2')[14].click();
+    await new Promise(resolve => setTimeout(resolve, 200)); 
     document.getElementsByClassName('bg-greenPrimaryButtonBackground')[0].click()
     await new Promise(resolve => setTimeout(resolve, 1000)); 
 
@@ -42,9 +42,9 @@ const trade = async () => {
     }
 
     document.getElementsByClassName('border-b-baseBorderMed')[0].click()
-    await new Promise(resolve => setTimeout(resolve, 100)); 
-    document.getElementsByClassName('bg-baseBackgroundL1')[3].click();
-    await new Promise(resolve => setTimeout(resolve, 100)); 
+    await new Promise(resolve => setTimeout(resolve, 200)); 
+    document.getElementsByClassName('bg-baseBackgroundL2')[14].click();
+    await new Promise(resolve => setTimeout(resolve, 200)); 
     document.getElementsByClassName('bg-redPrimaryButtonBackground')[0].click()
     await new Promise(resolve => setTimeout(resolve, 1000)); 
     document.getElementsByClassName('border-b-baseBorderMed')[0].click()
@@ -52,6 +52,6 @@ const trade = async () => {
 }
 
 // 3s 循环一次，想停止，刷新页面即可
-timer = setInterval(trade, 5000)
+timer = setInterval(trade, 10000)
 
 
